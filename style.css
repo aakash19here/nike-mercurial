@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend',sans-serif;
+    position: relative;
+}
+main{
+    background-color:black;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    justify-content: space-between;
+    height: 10vh;
+}
+.nav-bar img{
+    padding: 10px 20px;
+}
+.nav-bar p{
+    color: grey;
+    padding-top: 20px;
+}
+.images{
+    
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+}
+.images .check{
+    opacity: 0.1;
+    display: inline;
+    width: 80%;
+}
+ .images .shoes{
+     position: absolute;
+    top: 0;
+    width: 48%;
+    left: 25%;
+} 
+.footer{
+    height: 10vh;
+    /* background-color: chartreuse; */
+    position: absolute;
+    width: 100%;
+    bottom: 0;   
+}
+.socials{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.socials img{
+    width: 50px;
+    height: 50px;
+    
+}
+.buy{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 4vh;
+    justify-content: space-around;
+    width: 40%;
+}
+.buy .price{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+.buy .btn{
+    color: white;
+    background-color: red;
+    border-style: none;
+    border-radius: 50px;
+    width: 4em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    transition: 1s;
+}
+.btn:hover{
+    color: red;
+    background-color: white;
+    /* transition: 1s; */
+}
