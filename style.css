@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
     font-family: 'Lexend',sans-serif;
     position: relative;
     background-color:black;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden !important; 
 }
 .flex-box{
     display: flex;
@@ -18,7 +19,7 @@ body{
     align-items: center;
 }
 .flex-box img{
-   padding: 15px;
+   padding: 20px;
    height: 90px;
 }
 .flex-box .links{
@@ -50,6 +51,48 @@ body{
 .hero__section .shoe{
     z-index: 100;
 }
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+}
+.socials img{
+    width: 100%;
+    height: 70px;
+}
+.socials img:not(:last-child){
+    margin-right: 5rem;
+}
+.cta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 30%;
+}
+footer .cta .price{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+footer .cta button{
+    color: white;
+    background-color: red;
+    border-style: none;
+    border-radius: 50px;
+    width: 4em;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    transition: 1s;
+}
+footer .cta button:hover{
+    color: red;
+    background-color: white;
+}
 @media only screen and (max-width:630px){
     body{
         overflow: hidden;
@@ -61,7 +104,7 @@ body{
         display: inline-block;
     }
     .flex-box img{
-        height: 75px;
+        height: 95px;
     }
     .flex-box .links{
         display: none; 
@@ -83,5 +126,29 @@ body{
     .hero__section .shoe{
         width: 95%;
         z-index: 100;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .socials{
+        margin-top: 2rem;
+        order: 2;
+    }
+    .cta{
+        margin-top: 2rem;
+        order: 1;
+    }
+    .socials img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:360px){
+    .hero__section{ 
+        margin-top: 1rem;
+        position: relative;
+        text-align: center;
     }
 }
