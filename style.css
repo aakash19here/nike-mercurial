@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Lexend',sans-serif;
@@ -95,7 +95,7 @@ footer .cta button:hover{
 }
 @media only screen and (max-width:630px){
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .flex-box .cart{
         display: none;
